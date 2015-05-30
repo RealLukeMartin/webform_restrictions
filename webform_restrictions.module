@@ -1,0 +1,10 @@
+<?php
+
+function webform_restrictions_form_alter( &$form, &$form_state,$form_id ){
+  if ($form_id == 'my_desired_webform_form_id') {
+    $form['#submit'][] = 'changemyform_submit_handler';
+  }
+}
+function webform_restrictions_submit_handler($form, &$form_state) {
+ // submission logic ...
+}
