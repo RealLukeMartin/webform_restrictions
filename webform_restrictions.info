@@ -1,0 +1,4 @@
+name = Webform Restrictions
+description = Denies a webform submission based on a component's value.
+core = 7.x
+dependencies[] = webform
